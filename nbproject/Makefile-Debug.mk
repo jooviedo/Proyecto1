@@ -35,7 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/calc/lex.yy.o \
+	${OBJECTDIR}/calc/y.tab.o \
+	${OBJECTDIR}/lex.yy.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/myscanner.o
 
 
 # C Compiler Flags
@@ -62,10 +66,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/proyecto1: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/proyecto1 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/calc/lex.yy.o: calc/lex.yy.c 
+	${MKDIR} -p ${OBJECTDIR}/calc
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/calc/lex.yy.o calc/lex.yy.c
+
+${OBJECTDIR}/calc/y.tab.o: calc/y.tab.c 
+	${MKDIR} -p ${OBJECTDIR}/calc
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/calc/y.tab.o calc/y.tab.c
+
+${OBJECTDIR}/lex.yy.o: lex.yy.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/lex.yy.o lex.yy.c
+
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/myscanner.o: myscanner.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/myscanner.o myscanner.c
 
 # Subprojects
 .build-subprojects:

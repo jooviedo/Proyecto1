@@ -4,7 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>prueba.h</itemPath>
+      <itemPath>config.in</itemPath>
+      <itemPath>myscanner.h</itemPath>
+      <itemPath>myscanner.l</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -13,7 +15,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>lex.yy.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>myscanner.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -26,6 +30,10 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>calc/calc.h</itemPath>
+    <itemPath>calc/lex.yy.c</itemPath>
+    <itemPath>calc/y.tab.c</itemPath>
+    <itemPath>calc/y.tab.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -37,9 +45,25 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="calc/calc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="calc/lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="calc/y.tab.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="calc/y.tab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="prueba.h" ex="false" tool="3" flavor2="0">
+      <item path="myscanner.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="myscanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="myscanner.l" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -62,9 +86,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="calc/calc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="calc/lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="calc/y.tab.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="calc/y.tab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="prueba.h" ex="false" tool="3" flavor2="0">
+      <item path="myscanner.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="myscanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="myscanner.l" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

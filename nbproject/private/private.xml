@@ -7,7 +7,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/johan/Dropbox/Progra%20%231Compilador/Proyecto1/main.c</file>
+            <file>file:/home/arturo/Dropbox/Progra1/Proyecto1/calc/lex.yy.c</file>
+            <file>file:/home/arturo/Dropbox/Progra1/Proyecto1/calc/y.tab.c</file>
+            <file>file:/home/arturo/Dropbox/Progra1/Proyecto1/calc/y.tab.h</file>
+            <file>file:/home/arturo/Dropbox/Progra1/Proyecto1/calc/calc.h</file>
         </group>
     </open-files>
 </project-private>
